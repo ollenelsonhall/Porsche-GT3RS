@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #161616;
+    align-items: center;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 0.9em;
+    max-width: 35em;
+    line-height: 27px;
+}
+
+h1, h2{
+    font-weight: 300;
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+h1{
+    margin: 0.5em 0;
+    font-size: 3em;
+}
+
+.specs h2, .about h2{
+    font-size: 1.5em;
+    font-family: myFirstFont;
+    padding-left: 1em;
+    border-left: 0.1em #ff0000 solid;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section{
+    padding: 2.5em;
+}
+
+.menu {
+    font-size: 1.2em;
+}
+
+
+nav, .infos, .info,
+.specs-header, .specs li,
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.specs, .icon,
+.panel:first-child,
+.panel:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 100vh;
+    min-height: 30em;
+    background: url(drömmar.jpg)
+    no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.background {
+    opacity: 0.5;
+}
+
+nav {
+padding: 1.5em 2.5em;
+position: relative;
+}
+
+.menu-btn {
+display: none;
+}
+
+.brand {
+    font-size: 1.6em;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.8em;
+    text-align: center;
+}
+
+nav a {
+color: #fff;
+}
+
+nav a:hover {
+ color: #eee;
+}
+
+.header-body {
+    padding: 2.5em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: myFirstFont;
+    justify-content: center;
+    position: relative;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-body p {
+    max-width: 25em;
+}
+
+.heading h2 {
+    margin-bottom: 1em;
+}
+
+.heading p {
+    margin-left: 3em;
+    display: inline-block;
+}
+
+.infos {
+    gap: 2em;
+    height: 10px;
+}
+
+.infos, .heading {
+    padding: 5em 1em;
+}
+
+.info img {
+    max-width: 4em;
+    margin-right: 1em;
+}
+
+
+.info h3 {
+    margin-bottom: 0,5em;
+}
+
+.info p {
+    max-width: 15em;
+}
+
+.specs {
+    background: url(bild3.jpg);
+    background-size: cover;
+    min-height: 40em;
+    position: relative;
+    padding-top: 1.5em;
+}
+
+.specs-header, .specs ul {
+    position: relative;
+    z-index: 1;
+}
+
+.specs ul {
+width: 40em;
+margin-top: 3em;
+}
+
+.specs li {
+    padding: 0.5em 0;
+    border-bottom: #555 1px solid;
+    align-items: center;
+}
+
+.specs li span:first-child {
+    color: #888;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+
+.panel:last-child {
+background: #fff;
+color: #555;
+}
+
+
+.specs::before,
+.panel:nth-child(3):before {
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.panel h2 {
+    margin: 0.7em 0;
+}
+
+.panel-lg {
+    background: url(bild5.jpg)
+    no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.panel:nth-child(4) .icon {
+    border: 3px #555 solid;
+}
+
+.car-stats {
+    padding: 5em 1em;
+}
+
+.stats {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stats > div {
+    margin-bottom: 1em;
+    position: relative;
+    min-width: 10em;
+}
+
+.stats > div h1:nth-child(2) {
+    color: #282828;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.stats h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    
+}
+
+.counter {
+    margin: 0.1em 0;
+
+}
+
+.car {
+    padding: 4em 1em 4em 1em;
+    margin-top: 2em;
+}
+
+.circle {
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: #161616;
+    animation: glow 4s ease-in-out infinite;
+    aspect-ratio: 3 / 1;
+}
+
+.car img {
+    width: 70%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.circle div {
+    border: inherit;
+    border-radius: inherit;
+    background: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: inherit;
+}
+
+.circle .inner-md-circle {
+    width: 75%;
+    height: 75%;
+    top: 10%;
+    animation-delay: 3s;
+}
+
+.circle .inner-sm-circle {
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    animation-delay: 6s;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 1em #ff0000;
+    }
+    
+    100% {
+        box-shadow: none;
+    }
+    }
+    

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <title>Gallery</title>
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(911porschav3.ttf);
+        }
+        
+    
+        </style>
+<nav>
+    <a href="index.html" class="brand">Porsche</a>
+    <ul class="menu">
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="purschase.html" class="btn">Purchase</a>
+    </ul>
+    
+    <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+    
+    <style>
+    
+    #slider { 
+        overflow: hidden;
+
+    }
+    #slider figure { 
+        position: fixed;
+        width: 500%;
+        margin: auto;
+        left: 0;
+        top: 0;
+        animation: 20s slider infinite;
+        z-index: -1;
+    }
+    #slider figure img { 
+        width: 20%;
+        float: left;
+    }
+
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="slider">
+        <figure>
+            <img src="slider1.jpg">
+            <img src="slider2.jpg">
+            <img src="slider3.jpg">
+            <img src="slider4.jpg">
+            <img src="slider5.jpg">
+            <img src="slider1.jpg">
+        </figure>
+        </div>
+        </body>
+        </html>
